@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
-import { routeDefault, routes } from './routes'
+import { routes } from './routes'
 
 import logo from '../logo.svg'
 import { Suspense } from 'react';
@@ -37,7 +37,7 @@ export const Navigation = () => {
                 />
               )
             }
-            <Route path="/*" element={<Navigate to={routeDefault.to} replace />} />
+            <Route path="/*" element={<Navigate to={routes[0].to} replace />} />
           </Routes>
 
         </div>
