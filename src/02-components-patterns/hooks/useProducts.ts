@@ -5,14 +5,10 @@ export const useProducts = ({ product, value = 0, onChange }: useProductArgs) =>
 
     const [counter, setCounter] = useState(value)
 
-    const isControlled = useRef(!!onChange)
-
     const increaseBy = (valueIncrease: number): void => {
-        if (isControlled.current) {
-            return onChange!({ product, count: valueIncrease })
-        }
         const newValue = Math.max(counter + valueIncrease, 0)
         setCounter(newValue)
+        onChange && onChange({ product, count: newValue })
     }
 
     useEffect(() => {
