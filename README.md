@@ -11,4 +11,4 @@
 #### Components Patterns Branches
 - component-compound
 - component-extend-style
-
+- component-control-props
