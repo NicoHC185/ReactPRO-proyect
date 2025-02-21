@@ -25,3 +25,22 @@ export interface ProductCardHOCProps {
     Buttons: (Props: ProductButtonsProps) => JSX.Element,
 }
 
+export type onChangeType = (args: onChangeArg) => void
+
+export interface onChangeArg {
+    product: Product,
+    count: number
+}
+
+export interface useProductArgs {
+    product: Product,
+    value?: number,
+    onChange?: onChangeType
+}
+export interface ProductInCart extends Product {
+    count: number
+}
+
+export interface ShoppingCart {
+    [key: string]: ProductInCart
+}
