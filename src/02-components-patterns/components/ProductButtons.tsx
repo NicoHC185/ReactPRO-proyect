@@ -49,3 +49,5 @@ export const ProductButtonAdd = ({ increaseBy, disabled }: ButtonProps) => {
         </button>
     )
 }
+
+export default ProductButtons

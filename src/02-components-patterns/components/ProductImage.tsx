@@ -26,3 +26,5 @@ export const ProductImage = ({ img, className, style }: Props) => {
         />
     )
 }
+
+export default ProductImage

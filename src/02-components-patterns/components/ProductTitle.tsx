@@ -21,3 +21,5 @@ export const ProductTitle = ({ title, className, style }: Props) => {
         </span>
     )
 }
+
+export default ProductTitle
