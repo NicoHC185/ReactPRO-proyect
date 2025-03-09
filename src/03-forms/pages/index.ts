@@ -1,7 +1,7 @@
-export {FormikAbstractPage} from "./FormikAbstract"
-export {FormikBasicPage} from "./FormikBasicPage"
-export {FormikComponentPage} from "./FormikComponents"
-export {FormikYupPage} from "./FormikYupPage"
-export {RegisterPage} from "./RegisterPage"
-
- 
+export { FormikAbstractPage } from "./FormikAbstract"
+export { FormikBasicPage } from "./FormikBasicPage"
+export { FormikComponentPage } from "./FormikComponents"
+export { FormikYupPage } from "./FormikYupPage"
+export { RegisterPage } from "./RegisterPage"
+export { RegisterFormikPage } from "./RegisterFormikPage"
+export { DynamicForm } from "./DynamicForm"
